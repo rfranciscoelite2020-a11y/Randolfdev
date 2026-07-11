@@ -1,35 +1,40 @@
-# My Complete Portfolio
+# Randolf Francisco — Automation Portfolio
 
-This is my portfolio as of 7/11/2026.
+A responsive portfolio website showcasing GoHighLevel implementation, marketing automation, AI calling workflows, funnels, and website projects.
 
-## Overview
+## Highlights
 
-Welcome to my portfolio! This repository showcases my projects, skills, and experience.
+- Real GoHighLevel workflow screenshots
+- Website and funnel portfolio with live project links
+- Responsive desktop, tablet, and mobile layouts
+- Light and dark themes
+- Accessible navigation and interactive project gallery
 
-## Getting Started
+## Run locally
 
-To explore this portfolio:
+Requirements: Node.js 22.13 or newer.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/rfranciscoelite2020-a11y/My-Complete-Portfolio.git
-   ```
+```bash
+npm install
+npm run dev
+```
 
-2. Navigate to the directory:
-   ```bash
-   cd My-Complete-Portfolio
-   ```
+Open the local address displayed in the terminal.
 
-3. Open the project files to view the portfolio contents.
+## Production build
 
-## Project Contents
+```bash
+npm run build
+```
 
-This portfolio includes a collection of my work and projects that demonstrate my skills and expertise.
+## Main files
+
+- `app/page.tsx` — page content and interactions
+- `app/globals.css` — visual design and responsive styling
+- `public/work/` — portfolio screenshots and project images
 
 ## Contact
 
-For more information or inquiries, feel free to reach out!
-
----
-
-*Last updated: 7/11/2026*
+- Email: rfranciscoelite2020@gmail.com
+- WhatsApp: +63 927 379 0758
+- Portfolio: https://randolf-automation-portfolio.rfranciscoelite2020.chatgpt.site
