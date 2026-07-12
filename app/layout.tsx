@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
@@ -13,9 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Randolf Francisco | GoHighLevel & Automation Specialist",
+  title: {
+    default: "Randolf Francisco | GoHighLevel Implementation Specialist",
+    template: "%s | Randolf Francisco",
+  },
   description:
-    "GoHighLevel, funnel, marketing automation, CRM, and AI systems for agencies and service businesses.",
+    "Skills-focused portfolio of Randolf Francisco showcasing GoHighLevel architecture, automation, Voice AI, websites, funnels, integrations, QA and remote implementation work.",
+  keywords: [
+    "GoHighLevel specialist",
+    "marketing automation",
+    "CRM implementation",
+    "AI voice workflows",
+    "funnel builder",
+    "GoHighLevel automation",
+    "remote automation specialist",
+  ],
+  authors: [{ name: "Randolf Francisco" }],
+  creator: "Randolf Francisco",
+  robots: {
+    index: true,
+    follow: true,
+  },
   other: {
     "codex-preview": "development",
   },
@@ -33,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${plusJakarta.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
