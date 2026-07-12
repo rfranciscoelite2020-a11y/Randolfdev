@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -54,6 +55,13 @@ export default function RootLayout({
         className={`${plusJakarta.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Script
+          id="leadconnector-voice-ai-widget"
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a540fd082c5a91e7f04a66a"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
