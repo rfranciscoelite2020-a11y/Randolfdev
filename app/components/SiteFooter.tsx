@@ -14,7 +14,7 @@ export default function SiteFooter() {
       <div className="footer-main section-shell">
         <div className="footer-identity">
           <Link className="brand footer-brand" href="/">
-            <span className="brand-mark">RF</span>
+            <span className="brand-mark" aria-hidden="true" />
             <span className="brand-copy">
               <strong>Randolf Francisco</strong>
               <small>GoHighLevel · Automation · AI</small>

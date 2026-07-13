@@ -1,0 +1,19 @@
+{
+  "name": "Randolf Francisco — GoHighLevel & Automation Specialist",
+  "short_name": "Randolf Francisco",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#4F3FF0",
+  "background_color": "#FFFFFF",
+  "display": "standalone"
+}

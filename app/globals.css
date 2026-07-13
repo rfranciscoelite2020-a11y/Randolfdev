@@ -110,17 +110,16 @@ img { display: block; max-width: 100%; }
 .brand-mark {
   width: 40px;
   height: 40px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(255,255,255,.32);
-  border-radius: 12px;
-  color: white;
-  background: #4f3ff0;
+  flex: 0 0 40px;
+  display: block;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  background: #4f3ff0 url("/logo-512.png") center / cover no-repeat;
   box-shadow: 0 8px 20px rgba(79,63,240,.2);
-  font-size: 12px;
-  font-weight: 820;
-  letter-spacing: -.04em;
+  transition: background-color .25s ease, box-shadow .25s ease, transform .2s ease;
 }
+.brand:hover .brand-mark { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(79,63,240,.26); }
 .brand-copy { display: flex; flex-direction: column; gap: 3px; }
 .brand-copy strong { font-size: 13px; letter-spacing: -.018em; }
 .brand-copy small { color: var(--muted); font-size: 8px; font-weight: 680; letter-spacing: .085em; text-transform: uppercase; }
@@ -206,6 +205,16 @@ img { display: block; max-width: 100%; }
 
 /* Keep every header label and control legible against the dark theme chrome. */
 :root[data-theme="dark"] .site-header { color: #ffffff; }
+:root[data-theme="dark"] .brand-mark {
+  background-color: #ffffff;
+  background-image: url("/logo-alt-light-512.png");
+  box-shadow: 0 8px 22px rgba(0,0,0,.3), 0 0 0 1px rgba(255,255,255,.12);
+}
+.footer-brand .brand-mark {
+  background-color: #ffffff;
+  background-image: url("/logo-alt-light-512.png");
+  box-shadow: 0 8px 22px rgba(0,0,0,.3), 0 0 0 1px rgba(255,255,255,.12);
+}
 :root[data-theme="dark"] .brand-copy strong,
 :root[data-theme="dark"] .brand-copy small,
 :root[data-theme="dark"] .header-availability,
@@ -885,7 +894,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, va
   .section-shell { width: min(100% - 42px, 760px); }
   .site-header { top: 0; padding: 0 18px; border-radius: 0; }
   .header-inner, .site-header.is-scrolled .header-inner { min-height: 70px; }
-  .brand-mark { width: 40px; height: 40px; }
+  .brand-mark { width: 40px; height: 40px; flex-basis: 40px; }
   .menu-toggle { margin-left: auto; display: block; flex: 0 0 auto; }
   .nav {
     position: fixed;
@@ -1114,7 +1123,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid color-mix(in srgb, va
   .portfolio-logo-visual { height: 72px; padding: 11px; }
   .site-header { width: 100%; left: 0; padding-inline: 12px; transform: none; }
   .brand { gap: 9px; }
-  .brand-mark { width: 38px; height: 38px; border-radius: 11px; }
+  .brand-mark { width: 38px; height: 38px; flex-basis: 38px; border-radius: 9px; }
   .brand-copy small { display: none; }
   .menu-toggle { width: 40px; height: 40px; }
   .nav { left: 8px; right: 8px; top: 76px; max-height: calc(100dvh - 84px); padding: 16px; }

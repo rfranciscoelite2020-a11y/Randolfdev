@@ -71,7 +71,7 @@ export default function SiteHeader() {
       <header className={scrolled ? "site-header is-scrolled" : "site-header"}>
         <div className="header-inner">
           <Link className="brand" href="/" aria-label="Randolf Francisco portfolio home">
-            <span className="brand-mark">RF</span>
+            <span className="brand-mark" aria-hidden="true" />
             <span className="brand-copy">
               <strong>Randolf Francisco</strong>
               <small>GoHighLevel implementation specialist</small>
